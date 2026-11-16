@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap');
+      .bo-brand-title {
+        font-family: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+        fill: #FFFFFF;
+        font-size: 42px;
+        letter-spacing: 0.22em;
+        text-anchor: middle;
+      }
+      .bo-brand-tagline {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 600;
+        fill: #D4D4D4;
+        font-size: 14px;
+        letter-spacing: 0.32em;
+        text-anchor: middle;
+      }
+      .bo-tag-dot {
+        fill: #E31B23;
+        font-weight: 800;
+      }
+    </style>
+
+    <!-- Anisotropic Sculptural Brushed Platinum / Chrome Gradient -->
+    <linearGradient id="bo-metallic-platinum" x1="15%" y1="5%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="20%" stop-color="#ECECEC" />
+      <stop offset="40%" stop-color="#D2D2D2" />
+      <stop offset="65%" stop-color="#FAFAFA" />
+      <stop offset="85%" stop-color="#BDBDBD" />
+      <stop offset="100%" stop-color="#E0E0E0" />
+    </linearGradient>
+
+    <!-- Precision Chamfered Bevel Highlight -->
+    <linearGradient id="bo-metallic-bevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#666666" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#333333" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Deep Gemstone Crimson Red Gradient (#E31B23 Core) -->
+    <radialGradient id="bo-crimson-gem" cx="42%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#FF424A" />
+      <stop offset="40%" stop-color="#E31B23" />
+      <stop offset="75%" stop-color="#AC0B11" />
+      <stop offset="100%" stop-color="#6B0307" />
+    </radialGradient>
+
+    <!-- Laser Cut Edge Sheen Gradient -->
+    <linearGradient id="bo-laser-cut" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E31B23" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Ambient Shadow Filter -->
+    <filter id="bo-drop-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.6" />
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#E31B23" flood-opacity="0.35" />
+    </filter>
+
+    <filter id="bo-glow-red" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Centered Emblem Mark (Transform to Center at 300, 160) -->
+  <g transform="translate(193, 40)">
+    <!-- Ambient Red Halo behind Monogram -->
+    <circle cx="107" cy="138" r="75" fill="url(#bo-crimson-gem)" opacity="0.16" />
+
+    <!-- Unified Continuous Monogram Body -->
+    <g filter="url(#bo-drop-shadow)">
+      <!-- Solid Brushed Metal Core -->
+      <path
+        d="M 45 32 A 14 14 0 0 1 73 32 L 73 86.15 A 62 62 0 0 1 155.52 176.60 L 134.39 159.79 A 35 35 0 1 0 128.79 165.39 L 145.60 186.52 A 62 62 0 0 1 45 138 L 45 32 Z"
+        fill="url(#bo-metallic-platinum)"
+      />
+
+      <!-- Sculptural Chamfer Edge Bevel Stroke -->
+      <path
+        d="M 45 32 A 14 14 0 0 1 73 32 L 73 86.15 A 62 62 0 0 1 155.52 176.60 L 134.39 159.79 A 35 35 0 1 0 128.79 165.39 L 145.60 186.52 A 62 62 0 0 1 45 138 L 45 32 Z"
+        stroke="url(#bo-metallic-bevel)"
+        stroke-width="1.2"
+        stroke-linejoin="round"
+        fill="none"
+      />
+
+      <!-- Laser Cut Face 1 Specular Edge Highlight -->
+      <line x1="134.39" y1="159.79" x2="155.52" y2="176.60" stroke="url(#bo-laser-cut)" stroke-width="1.2" />
+
+      <!-- Laser Cut Face 2 Specular Edge Highlight -->
+      <line x1="128.79" y1="165.39" x2="145.60" y2="186.52" stroke="url(#bo-laser-cut)" stroke-width="1.2" />
+    </g>
+
+    <!-- Floating Center Origin Disc — Radiant Crimson Red (#E31B23) -->
+    <g filter="url(#bo-glow-red)">
+      <!-- Main Gemstone Disc -->
+      <circle cx="107" cy="138" r="20.5" fill="url(#bo-crimson-gem)" />
+
+      <!-- Fine Chamfered Rim on the Red Disc -->
+      <circle cx="107" cy="138" r="20.5" stroke="rgba(255,255,255,0.3)" stroke-width="0.9" fill="none" />
+
+      <!-- 3D Spherical Specular Curved Glaze -->
+      <ellipse cx="101.5" cy="132.5" rx="8" ry="5.5" transform="rotate(-25 101.5 132.5)" fill="#FFFFFF" opacity="0.45" />
+
+      <!-- Hot Singularity Fusion Core Point -->
+      <circle cx="107" cy="138" r="5" fill="#FFFFFF" opacity="0.85" />
+    </g>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="300" y="360" class="bo-brand-title">BRAND ORIGIN</text>
+  <text x="300" y="405" class="bo-brand-tagline">
+    BUILD <tspan class="bo-tag-dot">•</tspan> INNOVATE <tspan class="bo-tag-dot">•</tspan> GROW
+  </text>
+</svg>

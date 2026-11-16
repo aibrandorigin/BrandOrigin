@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 240" fill="none">
+  <defs>
+    <linearGradient id="fav-metallic" x1="15%" y1="5%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#EDEDED" />
+      <stop offset="60%" stop-color="#C8C8C8" />
+      <stop offset="100%" stop-color="#E8E8E8" />
+    </linearGradient>
+    <radialGradient id="fav-crimson" cx="42%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#FF3840" />
+      <stop offset="50%" stop-color="#E31B23" />
+      <stop offset="100%" stop-color="#800408" />
+    </radialGradient>
+  </defs>
+
+  <!-- Monogram Body -->
+  <path
+    d="M 45 32 A 14 14 0 0 1 73 32 L 73 86.15 A 62 62 0 0 1 155.52 176.60 L 134.39 159.79 A 35 35 0 1 0 128.79 165.39 L 145.60 186.52 A 62 62 0 0 1 45 138 L 45 32 Z"
+    fill="url(#fav-metallic)"
+  />
+
+  <!-- Floating Center Crimson Disc -->
+  <circle cx="107" cy="138" r="21" fill="url(#fav-crimson)" />
+  <circle cx="107" cy="138" r="5" fill="#FFFFFF" opacity="0.9" />
+</svg>
